@@ -15,6 +15,9 @@ function vote() {
     voteCount.textContent = `Toplam Oy: ${voteTotal}`;
     notification.textContent = `${name}, oy verdi!`;
 
-    // Buraya e-posta veya backend entegrasyonu ekleyebilirsin
     nameInput.value = "";
+}
+
+function scrollToForm() {
+    document.getElementById("voteForm").scrollIntoView({behavior: "smooth"});
 }
