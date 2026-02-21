@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Hexon Bot Sitesi</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hexon Bot</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Hexon Bot</div>
-        <nav>
-            <a href="#">Ana Sayfa</a>
-            <a href="#">İstatistikler</a>
-            <a href="#">Destek</a>
-            <a href="#">Hakkımızda</a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <h1>Hexon Bot Oy Ver</h1>
-        <p>Hızlı, güvenli ve modern bir bot oy sistemi</p>
-        <button onclick="scrollToForm()">Oy Ver</button>
-    </section>
+<!-- Başlık -->
+<div class="hero">
+  <h1>Hexon Bot</h1>
+  <p>Sunucunuza özel, şık ve animasyonlu web sitesi</p>
+  <div class="btn-container">
+    <button class="btn" id="statsBtn">İstatistikler</button>
+    <button class="btn" id="aboutBtn">Hakkımızda</button>
+  </div>
+</div>
 
-    <section class="stats">
-        <div class="stat">
-            <h2>10K+</h2>
-            <p>Kayıtlı Oy</p>
-        </div>
-        <div class="stat">
-            <h2>99.9%</h2>
-            <p>Uptime Garantisi</p>
-        </div>
-        <div class="stat">
-            <h2>7/24</h2>
-            <p>Teknik Destek</p>
-        </div>
-    </section>
+<!-- İstatistikler Bölümü -->
+<section id="statistics" class="hidden">
+  <h2>Sunucu İstatistikleri</h2>
+  <p id="statsContent">Bilgi yükleniyor...</p>
+</section>
 
-    <section class="vote-form" id="voteForm">
-        <h2>Oy Ver</h2>
-        <input type="text" id="voterName" placeholder="İsminiz">
-        <button onclick="vote()">Oy Ver</button>
-        <div id="notification" class="notification"></div>
-        <div id="voteCount" class="vote-count">Toplam Oy: 0</div>
-    </section>
+<!-- Hakkımızda Bölümü -->
+<section id="about" class="hidden">
+  <h2>Hakkımızda</h2>
+  <p>Hexon Bot, sunucunuzda yönetim, oyun ve eğlence özellikleri sağlayan güçlü bir bottur. Kullanımı kolay, hızlı ve güvenlidir. Bot, kullanıcı deneyimini artırmak için sürekli güncellenmektedir.</p>
+</section>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
